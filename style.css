@@ -129,7 +129,8 @@ nav ul{
     width: 90%;
     margin: auto;
     /*position: absolute;*/
-    margin 50vh auto 0 auto ;
+    margin: 
+    30vh auto 0 auto ;
     /*margin-top: 30vh;*/
     
 }
@@ -146,8 +147,8 @@ nav ul{
     /*background: linear-gradient(#131c27,#663b34);*/
     background: linear-gradient(#1d2b3b,darkgrey);
     background-clip: text; 
-    /*-webkit-text-fill-color : transparent;*/
-    color: rgba(0, 0, 0, 0);
+    -webkit-text-fill-color : transparent;
+    /*color: rgba(0, 0, 0, 0);*/
     padding-bottom: 10vh;
         
     
