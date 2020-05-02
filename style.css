@@ -140,6 +140,10 @@ nav ul{
     text-decoration: underline;
     text-decoration-thickness: 0.5rem;
     color: #1d2b3b;
+    position: relative;
+    transform: translate(0, -40vh);
+    animation: h2_Animation 3s infinite alternate forwards  ;
+    animation-iteration-count: 1
 }
 
 .locations-head h3{
@@ -147,8 +151,9 @@ nav ul{
     /*background: linear-gradient(#131c27,#663b34);*/
     background: linear-gradient(#1d2b3b,darkgrey);
     background-clip: text; 
-    -webkit-text-fill-color : transparent;
+    /*-webkit-text-fill-color : transparent;*/
     /*color: rgba(0, 0, 0, 0);*/
+    color: transparent;
     padding-bottom: 10vh;
         
     
@@ -160,6 +165,7 @@ nav ul{
     position: absolute;
     top: 0%;
     right: 0%;
+    pointer-events: none;
 }
 
 .moving-cloud-1{
@@ -172,9 +178,17 @@ nav ul{
 top:20%;    
 z-index: -1;
 opacity: 60%;
-animation: cloudAnimation 10s infinite alternate ease-in-out;
+animation: cloudAnimation 5s alternate ;
 }
 
+@keyframes h2_Animation{
+    0%{
+        transform: translate(0, -40vh);
+    }
+    100%{
+        transform: translate(0, 0vh);
+    }
+}
 @keyframes cloudAnimation{
     0%{
         transform: translate(10%, -5%);
