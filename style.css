@@ -230,6 +230,8 @@ nav ul{
     justify-content: center;
     color: wheat;
     text-align: center;
+    width: 90%;
+    margin: auto;
 }
 
 .benefits-head h3{
@@ -289,6 +291,8 @@ nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 90%;
+    margin: auto;
 }
 
 .form-wrapper{
@@ -330,6 +334,8 @@ nav ul{
 footer{
     color: white;
     background: darkslategray;
+    width: 90%;
+    margin: auto;
 }
 
 .footer-wrapper{
