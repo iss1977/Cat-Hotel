@@ -16,8 +16,15 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: auto;
     flex: 1;
+    width: 90%;
+    
 }
 
+.main-head, .hero, #locations
+{
+    width: 90%;
+    margin: auto;
+}
 
 h1 {
     font-size: 4.8rem;
@@ -69,6 +76,15 @@ button:hover{
 .main-head{
     background: #131c27;
     color: white;
+    position: sticky;
+    top:0px;
+    z-index: 15;
+}
+
+.main-head img{
+    height: 4.8rem;
+    width: auto;
+    margin-right: 20px;
 }
 
 nav{
@@ -79,6 +95,8 @@ nav{
     align-items: center;
     padding: 1.5rem;
     flex-wrap: wrap;
+    
+
 }
 
 
@@ -121,7 +139,7 @@ nav ul{
 /* locations  selection*/
 #locations{
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), transparent), url('./img/new-york-page.png');
+    background: linear-gradient(rgba(0,0,0,0.5), transparent), url('./img/cat-white-background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -137,29 +155,30 @@ nav ul{
     margin: 
     30vh auto 0 auto ;
     /*margin-top: 30vh;*/
+    color: whitesmoke;
     
 }
 
-.locations-head h2{
+.locations-head h1{
     padding: 1rem 0px;
     text-decoration: underline;
     text-decoration-thickness: 0.5rem;
-    color: #1d2b3b;
+    color: rgba(255, 0, 0, 0.918);
     position: relative;
     transform: translate(0, -40vh);
-    animation: h2_Animation 3s infinite alternate forwards  ;
+    animation: h2_Animation 2s infinite alternate forwards  ;
     animation-iteration-count: 1
 }
 
 .locations-head h3{
     padding: 1rem 0px;
     /*background: linear-gradient(#131c27,#663b34);*/
-    background: linear-gradient(#1d2b3b,darkgrey);
-    background-clip: text; 
+    /*background: linear-gradient(#1d2b3b,darkgrey);
+    background-clip: text; */
     /*-webkit-text-fill-color : transparent;*/
     /*color: rgba(0, 0, 0, 0);*/
-    color: transparent;
-    padding-bottom: 10vh;
+    
+    
         
     
 
@@ -168,8 +187,8 @@ nav ul{
 
 .cloud{
     position: absolute;
-    top: 0%;
-    right: 0%;
+    top: 30%;
+    right: -200px;
     pointer-events: none;
 }
 
@@ -179,35 +198,177 @@ nav ul{
 
 }
 
-.moving-cloud-2{
-top:20%;    
-z-index: -1;
-opacity: 60%;
-animation: cloudAnimation 5s alternate ;
-}
 
 @keyframes h2_Animation{
     0%{
-        transform: translate(0, -40vh);
+        transform: translate(0, -5vh);
+        opacity: 0;
     }
     100%{
         transform: translate(0, 0vh);
+        opacity: 1;
     }
 }
 @keyframes cloudAnimation{
     0%{
-        transform: translate(10%, -5%);
+        transform: translate(10%, 10%);
     }
     100%{
         transform: translate(0%, 0%);
     }
 }
 
+/* Benefits section*/
+
+.benefits-head{
+    background: #27394e;
+    min-height: 30vh;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
+    text-align: center;
+}
+
+.benefits-head h3{
+    padding: 3rem;
+}
+
+.cards{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 70vh;
+    align-items:    center;
+    justify-content: center;
+    align-content: center;
+}
+
+.card img{
+    max-width: 20%;
+    margin: 2rem;
+    
+
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+
+  
+}
+
+.card h4{
+    padding: 3rem;
+}
+.card p{
+    padding: 3rem;
+}
+.card-icon{
+    background: #27394e;
+    
+
+}
+
+.card{
+    text-align: center;
+    max-width: 450px;
+    flex: 1 1 35rem;
+    min-height: 40vh;
+    margin: 2rem 5rem ;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1) , 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Contact section*/
+#contact{
+    min-height: 100vh;
+    background:  url('./img/lights-water-blur-rain.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper{
+    background: rgba(0,0,0,.3);
+    width:60%;
+    color:white;
+    border-radius: 20px;
+}
+
+.form-head{
+    text-align: center;
+    padding: 4rem;
+}
+
+
+.email-form,.name-form{
+    padding: 3rem;
+    text-align: center;
+}
+
+.form-wrapper label{
+    margin: 0rem 3rem;;
+}
+
+.form-wrapper button{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-wrapper input{
+    padding: 1rem 3rem;
+}
+
+
+/* Footer section*/
+footer{
+    color: white;
+    background: darkslategray;
+}
+
+.footer-wrapper{
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin:auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+
+.footer-wrapper ul{
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-wrapper h5{
+    flex: 1 1 40rem;
+}
+
+
+
+
 /* Media query */
 @media screen and (max-width:930px){
     html{
-        font-size: 45%;
+        font-size: 65%;
     }
+
+    /* NO MORE 90% width if phone*/
+    .main-head, .hero, #locations{
+    width: 100%;
+    margin: auto;
+    }
+
     nav{
         text-align: center;
     }
@@ -228,5 +389,22 @@ animation: cloudAnimation 5s alternate ;
 
     .locations-head h2{
         color: rgb(228, 228, 228);
+    }
+
+    /*CARDS */
+    .cards{
+        
+    }
+
+    /*Footer and Contact form*/
+    footer{
+        text-align: center;
+    }
+    footer h5{
+        padding-bottom: 2rem;
+    }
+
+    .form-wrapper{
+        width: 100%;
     }
 }

@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Travel Agency, where you can pick up your favorite travel" />
     <meta name="robots" content="index,follow">
-    <title>Travely - My travel agency</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"> 
+    <title>Cat Hotel - My pet's favorite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./icons/airplane.svg">
+    <link rel="icon" href="./icons/paw-solid.svg">
 </head>
 
 <body>
     <!-- HEADER -->
     <header class="main-head">
         <nav>
-            <h1 id="Logo"><a href="#hero">Travelly</a></h1>
+            <img src="./img/Katze-weiss-transparent.png" alt="cat">
+            <h1 id="Logo"><a href="#hero">Cat-Hotel</a></h1>
             <ul>
                 <li><a href="#locations">Location</a></li>
                 <li><a href="#benefits">Benefits</a></li>
@@ -29,21 +30,84 @@
     <!--Section 1 -->
     <section class="hero">
         <h1>Relax. Your pet is safe.</h1>
-        <h2>Book a reservation for your cat now <br/> and enjoy your holiday. </h3>
-        <button>Book now</button>
+        <h2>Book a reservation for your cat now <br /> and enjoy your holiday. </h3>
+            <button>Book now</button>
     </section>
 
-    <!--Section 2 - Benefits-->
+    <!--Section 2 - Locations-->
 
     <section id="locations">
         <header class="locations-head">
-            <h2>The perfect traveling experience</h2>
-            <h3>We cover everything from picking the perfect hotel, <br>flight and travel destination.</h3>
-            <img src="./img/cloud.png" alt="cloud" class="moving-cloud-1 cloud"/>
-            <img src="./img/cloud.png" alt="cloud" class="moving-cloud-2 cloud"/>
+            <h1>We take good care of your beloved pet.</h2>
+                <h3>Let us put our knowledge to work. <br>We are a team of profesionals with many years of experience.
+                    <br>Enjoy your time and let usdo the care.</h3>
+                <img src="./img/cloud_unten.png" alt="cloud" class="moving-cloud-1 cloud" />
+                <img src="./img/Katze-happy.png" alt="Happy Cat">
         </header>
     </section>
 
+    <!-- Benefits-->
+    <section id="benefits">
+        <header class="benefits-head">
+            <h2>The perfect second home for your cat</h2>
+            <h3>The cat will be happy with our services. <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quia, vero!</h3>
+        </header>
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">
+                    <img src="./icons/user-md-solid.svg" alt="Cat Doctor">
+                </div>
+                <h4>Cat DOK <br>  24/7 vet coverage.</h4>
+                <p>If your cat needs heath assistance, we guaranty acces to a doctor 24/7.   </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quis, error dolorem nisi rem beatae corporis velit nostrum cupiditate laborum!</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img src="./icons/bed-solid.svg" alt="">
+                </div>
+                <h4>Cat sleepeing</h4>
+                <p>Best service for your cat</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img src="./icons/plane-departure-solid.svg" alt="">
+                </div>
+                <h4>Cat safety</h4>
+                <p>See your cat happy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact FORM-->
+    <section id="contact">
+        <div class="form-wrapper">
+            <header class="form-head">
+                <h2>Contact Us</h2>
+            </header>
+            <form  action="https://formspree.io/xpzyzbqd" method="POST">
+                <div class="name-form">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="email-form">
+                    <label for="email">Email:</label>
+                    <input type="email" name="_replyto" required>
+                </div>
+                <button type="submit" value="Send" >Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrapper">
+            <h5>Cat Hotel&copy;</h5>
+            <ul>
+                <li><a href="#"><img src="./icons/twitter.svg" alt="tritter"></a></li>
+                <li><a href="#"><img src="./icons/youtube.svg" alt="Youtube"></a></li>
+                <li><a href="#"><img src="./icons/instagram.svg" alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
