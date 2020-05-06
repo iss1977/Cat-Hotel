@@ -1,2 +1,2 @@
-# City-Landscape---Dev-ED
-Udemy DevEd Project 1
+# Cat hotel - CSS and HTML Codersbay Test
+based on a Udemy DevEd Lesson
