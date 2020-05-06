@@ -360,7 +360,7 @@ footer{
 /* Media query */
 @media screen and (max-width:930px){
     html{
-        font-size: 65%;
+        font-size: 45%;
     }
 
     /* NO MORE 90% width if phone*/
