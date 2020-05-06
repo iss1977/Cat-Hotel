@@ -323,6 +323,7 @@ nav ul{
 
 .form-wrapper input{
     padding: 1rem 3rem;
+    max-width: 30rem;
 }
 
 
